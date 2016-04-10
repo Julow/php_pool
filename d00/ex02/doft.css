@@ -1,0 +1,135 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   doft.css                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jaguillo <jaguillo@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/04/04 17:19:07 by jaguillo          #+#    #+#             */
+/*   Updated: 2016/04/04 17:25:15 by jaguillo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+body{
+	background: rgb(80, 80, 80);
+}
+
+.block{
+	background: rgb(144, 144, 144);
+	box-shadow: 10px 10px 10px black;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#header{
+	width: 1400px;
+	margin: 20px auto;
+}
+
+#header-right{
+	float: right;
+}
+#header-right-button{
+	position: relative;
+	display: inline-block;
+	width: 24px;
+	height: 115px;
+	vertical-align: top;
+}
+#header-right-button img{
+	position: absolute;
+}
+
+#page{
+	position: relative;
+	width: 1400px;
+	margin: 0 auto;
+	text-align: center;
+	clear: both;
+}
+
+.sidebar{
+	display: inline-block;
+	width: 120px;
+	height: 405px;
+	margin: 0 16px;
+	vertical-align: top;
+	text-align: center;
+}
+
+.sidebutton{
+	border: 4px solid rgba(0, 0, 0, 0);
+	border-radius: 4px;
+}
+.sidebutton:hover{
+	border-color: red;
+}
+
+.sidebutton-brick{
+	background: url('resources/brick.jpg') repeat;
+	border-radius: 0;
+	height: 65px;
+}
+
+.content{
+	position: relative;
+	margin: 0 10px;
+	display: inline-block;
+	padding-bottom: 7px;
+}
+
+.content a{
+	display: inline-block;
+	position: absolute;
+}
+
+#lecarrevert
+{
+	position: absolute;
+	left: -55px;
+	bottom: -90px;
+	width: 500px;
+	height: 150px;
+	background: rgb(136, 255, 137);
+	text-align: left;
+	font-family: Arial, Helvetica, serif;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+#lecarrevert p{
+	margin: 0;
+}
+
+#lecarrevert .big{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 34px;
+}
+
+#lecarrevert .italic{
+	font-size:16px;
+	font-style: italic;
+}
+
+#lecarrevert .shadow{
+	text-shadow:5px 5px 5px rgba(255, 0, 0, 0.7);
+}
+
+#lecarrevert input[type="text"]{
+	width: 380px;
+	border-width: 2px;
+	border-style: solid;
+	border-left-color: rgb(154, 156, 155);
+	border-top-color: rgb(154, 156, 155);
+	border-right-color: rgb(241, 235, 242);
+	border-bottom-color: rgb(241, 235, 242);
+	font-size: 12px;
+}
+
+#lecarrevert input[type="submit"]{
+	border: 1px solid rgb(167, 164, 165);
+	background: linear-gradient(rgb(245, 247, 246), rgb(221, 221, 221));
+	font-family: arial, sans-serif;
+	letter-spacing: 0.5px;
+	font-size: 12px;
+}

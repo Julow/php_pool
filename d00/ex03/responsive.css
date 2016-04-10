@@ -1,0 +1,223 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   responsive.css                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jaguillo <jaguillo@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/04/04 17:26:20 by jaguillo          #+#    #+#             */
+/*   Updated: 2016/04/04 18:04:33 by jaguillo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+body{
+}
+table{
+	margin: 0 auto;
+	border-spacing: 1vw 5px;
+}
+h1{
+	text-align: center;
+}
+img{
+	display: block;
+	margin: 50px auto;
+}
+
+.blank-tr{
+	height: 35px;
+}
+
+.e-td{
+	position: relative;
+	border: 2px solid black;
+	text-align: center;
+	font-size: 24px;
+	color: black;
+}
+.r-td{
+	border: 2px solid rgba(0, 0, 0, 0.2);
+	text-align: center;
+	font-size: 16px;
+}
+
+tr td,tr th{
+	width: 60px;
+	height: 70px;
+	padding: 5px;
+}
+
+.num{
+	position: absolute;
+	bottom: 2px;
+	left: 2px;
+	font-size: 10px;
+}
+.mass{
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	font-size: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	line-height: 1em;
+}
+
+.n-gaz{
+	color: red;
+}
+.n-liquid{
+	color: blue;
+}
+
+.a-desin{
+	border-style: dashed;
+}
+.a-synth{
+	border-style: dotted;
+}
+
+.t-malca{
+	background-color: #ff6666;
+}
+.t-alcat{
+	background-color: #ffdead;
+}
+.t-lanth{
+	background-color: #ffbfff;
+}
+.t-actin{
+	background-color: #ff99cc;
+}
+.t-mtran{
+	background-color: #ffc0c0;
+}
+.t-mpoor{
+	background-color: #cccccc;
+}
+.t-metao{
+	background-color: #cccc99;
+}
+.t-nonme{
+	background-color: #a0ffa0;
+}
+.t-halog{
+	background-color: #ffff99;
+}
+.t-gazno{
+	background-color: #c0ffff;
+}
+
+@media only screen and (max-width: 1500px){
+
+table{
+	border-spacing: 5px 5px;
+}
+
+tr td,tr th{
+	height: 60px;
+}
+
+.e-td{
+	font-size: 20px;
+}
+
+.r-td{
+	font-size: 12px;
+}
+
+.mass{
+	max-width: 20px;
+	max-height: 1em;
+}
+
+}
+
+@media only screen and (max-width: 1000px){
+
+table{
+	border-spacing: 2px 2px;
+}
+
+tr td,tr th{
+	height: 50px;
+}
+
+.period{
+	display: none;
+}
+
+.e-td,.r-td{
+	border-width: 1px;
+}
+
+.r-td{
+	font-size: 10px;
+}
+
+}
+
+@media only screen and (max-width: 800px){
+
+body{
+	margin: 0;
+}
+
+table{
+	border-spacing: 1px 1px;
+}
+
+tr td,tr th{
+	height: 40px;
+	padding: 3px;
+}
+
+th{
+	font-size: 0;
+}
+
+.e-td{
+	font-size: 14px;
+}
+
+.r-td{
+	font-size: 8px;
+}
+
+.mass{
+	font-size: 8px;
+}
+
+}
+
+@media only screen and (max-width: 650px){
+
+table{
+	border-spacing: 0 0;
+}
+
+tr td,tr th{
+	height: 40px;
+	padding: 0;
+}
+
+.e-td{
+	border: 0;
+	font-size: 12px;
+}
+
+.r-td{
+	border: 0;
+	font-size: 0;
+}
+
+.num{
+	font-size: 8px;
+}
+
+.mass{
+	font-size: 6px;
+}
+
+}

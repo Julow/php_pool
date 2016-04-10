@@ -1,0 +1,80 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   menu.css                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jaguillo <jaguillo@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/04/04 18:10:04 by jaguillo          #+#    #+#             */
+/*   Updated: 2016/04/04 19:54:14 by jaguillo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
+** menu
+*/
+
+.menu{
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu li{
+	position: relative;
+	display: block;
+}
+
+.menu li p{
+	display: block;
+	margin: 0;
+}
+.menu li:hover > p{
+	background: #333;
+}
+
+.menu li > .menu{
+	position: absolute;
+	top: 0;
+	left: 100%;
+	display: none;
+}
+.menu li:hover > .menu{
+	display: block;
+	z-index:99;
+}
+
+.menu-horizontal{
+	height: 20px;
+}
+.menu-horizontal > li{
+	display: inline-block;
+	margin-right: -4px;
+	vertical-align: top;
+}
+.menu-horizontal > li > .menu{
+	top: auto;
+	left: 0;
+}
+
+/*
+** menu styles
+*/
+
+.menu li{
+	background: #94DBF2;
+}
+.menu li:hover > p{
+	background: #57B1CF;
+}
+.menu li p{
+	width: 100px;
+	padding: 5px 10px;
+	overflow: hidden;
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.menu-horizontal > li > p{
+	text-align: center;
+}
