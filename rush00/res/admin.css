@@ -1,0 +1,33 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   admin.css                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jaguillo <jaguillo@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/04/10 16:28:06 by jaguillo          #+#    #+#             */
+/*   Updated: 2016/04/10 16:28:07 by jaguillo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+table
+{
+	width: 100%;
+}
+table ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+table input
+{
+	max-width: 100px;
+}
+table td
+{
+    border-right: 1px solid black;
+}​
+table td:last-child { 
+    border-right: none; 
+}

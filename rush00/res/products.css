@@ -1,0 +1,48 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   products.css                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jaguillo <jaguillo@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/04/10 16:28:02 by jaguillo          #+#    #+#             */
+/*   Updated: 2016/04/10 19:11:53 by jaguillo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+.product
+{
+	display: inline-block;
+	width: 200px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	margin: 20px;
+}
+
+.product_name
+{
+	margin: 0;
+	padding: 20px 0 0 0;
+	height: 150px;
+	background: #efefef;
+}
+
+.big_bar
+{
+	margin: 15px 0;
+	padding: 5px 25px;
+	background: #ddd;
+	text-align: left;
+}
+
+.button
+{
+	margin: 5px;
+	padding: 10px 15px;
+	border: 1px solid #eee;
+	border-radius: 10px;
+	color: #333;
+}
+.button:hover
+{
+	border-color: #fff;
+}

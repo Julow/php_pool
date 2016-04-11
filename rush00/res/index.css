@@ -1,0 +1,128 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   index.css                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jaguillo <jaguillo@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/04/09 14:00:11 by jaguillo          #+#    #+#             */
+/*   Updated: 2016/04/10 19:11:12 by jaguillo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+body
+{
+	margin: 0;
+	background: #efefef;
+}
+
+section
+{
+	width: 800px;
+	margin: 0 auto;
+	padding: 1px;
+	text-align: center;
+}
+
+footer{
+	margin:0 auto;
+	text-align: right;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+/*
+** Header
+*/
+
+#header
+{
+	padding: 5px 0 0 0;
+	background: #fff;
+	border-bottom: 1px solid white;
+}
+
+#menu
+{
+	background: #ddd;
+}
+
+.menu-horizontal
+{
+	text-align: left;
+}
+.menu li a
+{
+	width: 100px;
+	padding: 5px 10px;
+	background: #ddd;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.menu li:hover > a
+{
+	background: #57B1CF;
+}
+.menu-horizontal > li > a
+{
+	text-align: center;
+}
+
+#title
+{
+	margin: 30px 0 40px 5px;
+	text-align: left;
+	font-size: 48px;
+}
+
+/*
+** Content
+*/
+
+.content
+{
+	padding: 20px 0;
+	background: #fff;
+	border-left: 1px solid rgba(0, 0, 0, 0.2);
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.content > p
+{
+	margin: 15px;
+	text-align: left;
+}
+
+.error
+{
+	width: 200px;
+	margin: 15px auto;
+	padding: 10px;
+	border: 2px solid red;
+}
+
+.login_form
+{
+	display: inline-block;
+	margin: 10px 0;
+	padding: 10px 20px;
+	border: 1px solid #ddd;
+	border-radius: 15px;
+}
+
+.login_form p
+{
+	margin: 5px 0;
+}
+.login_form label
+{
+	display: inline-block;
+	margin: 10px;
+	width: 100px;
+	text-align: left;
+}
+
+#footer
+{
+	padding: 20px;
+	background: #fff;
+}
