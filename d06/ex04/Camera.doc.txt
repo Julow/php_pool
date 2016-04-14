@@ -1,0 +1,22 @@
+
+<- Camera ----------------------------------------------------------------------
+Represent the Camera
+
+Construct:
+
+new Camera(array(
+	"width"			=> float		Screen width
+	"height"		=> float		Screen height
+	"ratio"			=> float		Aspect ratio (replace "width" and "height")
+	"origin"		=> Vertex		Camera origin
+	"orientation"	=> Matrix		Camera orientation
+	"fov"			=> float		Perspective fov
+	"near"			=> float		Perspective near plane
+	"far"			=> float		Perspective far plane
+));
+
+Methods:
+
+watchVertex(Vertex)			Transform a world vertex to a screen coord vertex
+
+---------------------------------------------------------------------- Camera ->

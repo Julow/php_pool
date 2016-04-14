@@ -1,0 +1,34 @@
+
+<- Matrix ----------------------------------------------------------------------
+4x4 matrix
+
+Construction:
+
+	Identity:
+	new Matrix(array("preset" => Matrix::IDENTITY));
+
+	Scale:
+	new Matrix(array("preset" => Matrix::SCALE, "scale" => float));
+
+	Rotation X:
+	new Matrix(array("preset" => Matrix::RX, "angle" => float));
+
+	Rotation Y:
+	new Matrix(array("preset" => Matrix::RY, "angle" => float));
+
+	Rotation Z:
+	new Matrix(array("preset" => Matrix::RZ, "angle" => float));
+
+	Translation:
+	new Matrix(array("preset" => Matrix::TRANSLATION, "vtc" => Vector));
+
+	Perspective projection:
+	new Matrix(array("preset" => Matrix::PROJECTION,
+		"fov" => float, "ratio" => float, "near" => float, "far" => float));
+
+Methods:
+
+	mult(Matrix)			Matrix product
+	transformVertex(Vertex)	Apply transformation to a vertex
+
+---------------------------------------------------------------------- Matrix ->
