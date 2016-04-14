@@ -1,0 +1,16 @@
+
+<- Vertex ----------------------------------------------------------------------
+Store a vertex coordinates and color.
+
+require 'Color.class.php'
+
+new Vertex(array(
+	"x"		=> float	x coord
+	"y"		=> float	y coord
+	"z"		=> float	z coord
+	"w"		=> float	w value (default: 1.0)
+	"color"	=> Color	color (default: white)
+));
+
+provides get{X,Y,Z,W,Color} getters and set{X,Y,Z,W,Color} setters
+---------------------------------------------------------------------- Vertex ->

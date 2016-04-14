@@ -1,0 +1,25 @@
+
+<- Vector ----------------------------------------------------------------------
+4d coordinates
+
+require 'Vertex.class.php'
+
+new Vector(array(
+	"dest" => Vertex		destination vertex
+	"orig" => Vertex		origin vertex (default: {0, 0, 0, 1})
+));
+
+methods: (V is the current vector)
+	getX()				Vx
+	getY()				Vy
+	getZ()				Vz
+	getW()				Vw
+	magnitude()			|V|
+	normalize()			^V
+	add(R)				V + R
+	sub(R)				V - R
+	scalarProduct(s)	V * s
+	dotProduct(R)		V . R
+	cos(R)				(V . R) / (|V| * |R|)
+	crossProduct(R)		V x R (right handed)
+---------------------------------------------------------------------- Vector ->
