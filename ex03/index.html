@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- index.html                                         :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: jaguillo <jaguillo@student.42.fr>          +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2016/04/15 14:05:49 by jaguillo          #+#    #+#            -->
+<!-- Updated: 2016/04/15 14:05:55 by jaguillo         ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+<html>
+<head>
+	<title>TODO</title>
+	<style type="text/css">
+
+#ft_list
+{
+	width: 500px;
+	margin: 0 auto;
+	padding: 15px 0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background: #fafafa;
+}
+
+#ft_list > div
+{
+	margin: 15px 30px;
+	padding: 10px 0;
+	background: #f0f0f0;
+	border: 1px solid #ddd;
+	text-align: center;
+	text-overflow: clip;
+	font-weight: bold;
+}
+
+#ft_list > div:hover
+{
+	cursor: pointer;
+	background: #b44;
+	border-color: #800;
+}
+
+h1
+{
+	margin: 40px;
+	color: #010101;
+	text-align: center;
+	font-family: Comic Sans Ms;
+}
+
+#new {
+	cursor: pointer;
+	display: block;
+	width: 500px;
+	margin: 25px auto 0 auto;
+	padding: 14px 20px;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 4px;
+	color: white;
+}
+
+#new:hover {
+	background-color: #45a049;
+}
+
+	</style>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="todo.js"></script>
+
+</head>
+<body>
+
+	<h1>TO DO LI ST</h1>
+	<div id="ft_list">
+	</div>
+	<input id="new" type="submit" value="New" />
+
+</body>
+</html>

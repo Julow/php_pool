@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- calc.html                                          :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: jaguillo <jaguillo@student.42.fr>          +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2016/04/14 13:53:02 by jaguillo          #+#    #+#            -->
+<!-- Updated: 2016/04/15 10:18:00 by jaguillo         ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+<html>
+<head>
+	<title>calc</title>
+	<style type="text/css">
+
+	</style>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+</head>
+<body>
+
+	<input id="left_n" type="text" />
+	<select id="op">
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+		<option value="%">%</option>
+	</select>
+	<input id="right_n" type="text" />
+	<input id="submit" type="submit" value="Try me!" />
+
+	<script type="text/javascript">
+
+var calc = (function()
+{
+
+	var OPS = {
+		"+": function(a, b) { return (a + b); },
+		"-": function(a, b) { return (a - b); },
+		"*": function(a, b) { return (a * b); },
+		"/": function(a, b) { return ((b != 0) ? a / b : "It's over 9000!"); },
+		"%": function(a, b) { return ((b != 0) ? a % b : "It's over 9000!"); }
+	};
+
+	var last_timeout = -1;
+
+	function get_int_value(id)
+	{
+		var val = $(id).val();
+
+		if (/^\d+$/.test(val))
+			return (parseInt(val));
+		return (false);
+	}
+
+	function log(str)
+	{
+		alert(str);
+		console.log(str);
+	}
+
+	function reset_timeout()
+	{
+		if (last_timeout >= 0)
+			clearTimeout(last_timeout);
+		last_timeout = setTimeout(function()
+		{
+			log("Please, use me...");
+		}, 30 * 1000);
+	}
+
+	function calc()
+	{
+		var left_n, right_n, op;
+
+		reset_timeout();
+		if ((left_n = get_int_value("#left_n")) === false
+			|| (right_n = get_int_value("#right_n")) === false
+			|| !((op = $("#op").val()) in OPS))
+			log("Error :(");
+		else
+			log(OPS[op](left_n, right_n));
+	}
+
+	return {
+		"calc": calc
+	};
+
+})();
+
+$(document).ready(function()
+{
+	$("#submit").on("click", function() { calc.calc(); });
+});
+
+	</script>
+
+</body>
+</html>
