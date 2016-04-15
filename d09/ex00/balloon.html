@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- balloon.html                                       :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: jaguillo <jaguillo@student.42.fr>          +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2016/04/14 12:14:09 by jaguillo          #+#    #+#            -->
+<!-- Updated: 2016/04/15 10:12:18 by jaguillo         ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+<html>
+<head>
+	<title>balloon</title>
+	<style type="text/css">
+
+#balloon
+{
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	background: red;
+}
+
+	</style>
+</head>
+<body>
+
+	<div id="balloon" onClick="balloon.inflate(10);" onMouseLeave="balloon.inflate(-5);"></div>
+
+	<script type="text/javascript">
+
+var balloon = (function()
+{
+	var MAX_SIZE = 420;
+	var MIN_SIZE = 200;
+	var COLORS = ["red", "green", "blue"];
+
+	var balloon = document.getElementById("balloon");
+
+	var curr_color = 0;
+
+	var size = MIN_SIZE;
+
+	function inflate(s)
+	{
+		s += size;
+		curr_color = (curr_color + ((s < size) ? COLORS.length - 1 : 1)) % COLORS.length;
+		size = (s > MAX_SIZE || s < MIN_SIZE) ? MIN_SIZE : s;
+		balloon.style.width = size + "px";
+		balloon.style.height = size + "px";
+		balloon.style.backgroundColor = COLORS[curr_color];
+	}
+
+	return {
+		"inflate": inflate
+	};
+
+})();
+
+	</script>
+
+</body>
+</html>
