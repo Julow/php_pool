@@ -1,6 +1,6 @@
 # PHP pool
 
-_(waiting)_
+81%
 
 |			|			|
 |-----------|-----------|
@@ -14,5 +14,5 @@ _(waiting)_
 | D06		| 76%		|
 | D07		| 100%		|
 | D08		| Give up	|
-| D09		| _Waiting_	|
+| D09		| 100%		|
 | Rush01	| Give up	|
